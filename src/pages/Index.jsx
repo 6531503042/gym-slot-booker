@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Button } from "@nextui-org/react";
+import { Button } from "@/components/ui/button";
 
 const Index = () => {
   return (
@@ -8,7 +8,7 @@ const Index = () => {
         <h1 className="text-4xl font-bold mb-4">Welcome to Gym Booking System</h1>
         <p className="text-xl text-gray-600 mb-6">Book your gym slot easily and quickly!</p>
         <Link to="/gym-booking">
-          <Button color="primary" size="lg">
+          <Button size="lg">
             Book Now
           </Button>
         </Link>
