@@ -1,4 +1,4 @@
-import { HomeIcon, DumbbellIcon, Racquet } from "lucide-react";
+import { HomeIcon, DumbbellIcon, Racket } from "lucide-react";
 import Index from "./pages/Index.jsx";
 import GymBooking from "./pages/GymBooking";
 import BadmintonBooking from "./pages/BadmintonBooking";
@@ -22,7 +22,7 @@ export const navItems = [
   {
     title: "Badminton Booking",
     to: "/badminton-booking",
-    icon: <Racquet className="h-4 w-4" />,
+    icon: <Racket className="h-4 w-4" />,
     page: <BadmintonBooking />,
   },
 ];
