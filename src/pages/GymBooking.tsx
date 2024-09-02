@@ -5,7 +5,13 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { DumbbellIcon, UsersIcon, ClockIcon, CheckCircleIcon, AlertCircleIcon, XCircleIcon } from "lucide-react";
 
-const timeSlots = [
+interface TimeSlot {
+  time: string;
+  available: number;
+  total: number;
+}
+
+const timeSlots: TimeSlot[] = [
   { time: "13:00 - 15:00", available: 10, total: 20 },
   { time: "15:15 - 17:15", available: 2, total: 20 },
   { time: "17:30 - 19:30", available: 15, total: 20 },
