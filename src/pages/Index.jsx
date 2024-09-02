@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Dumbbell, Activity, Waves, Football } from "lucide-react";
+import { Dumbbell, Activity, Waves } from "lucide-react";
+import SportsFootballIcon from '@mui/icons-material/SportsFootball';
 
-const Index: React.FC = () => {
+const Index = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="text-center">
@@ -27,7 +28,7 @@ const Index: React.FC = () => {
           </Link>
           <Link to="/football-booking">
             <Button size="lg" variant="outline" className="w-full">
-              <Football className="mr-2 h-5 w-5" /> Book Football
+              <SportsFootballIcon className="mr-2 h-5 w-5" /> Book Football
             </Button>
           </Link>
         </div>
