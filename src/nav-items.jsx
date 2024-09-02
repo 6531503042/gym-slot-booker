@@ -1,5 +1,5 @@
 import React from 'react';
-import { HomeIcon, DumbbellIcon, Activity, Waves, Football } from "lucide-react";
+import { HomeIcon, DumbbellIcon, Activity, Waves } from "lucide-react";
 import Index from "./pages/Index";
 import GymBooking from "./pages/GymBooking";
 import BadmintonBooking from "./pages/BadmintonBooking/BadmintonBooking";
@@ -37,7 +37,7 @@ export const navItems = [
   {
     title: "Football Booking",
     to: "/football-booking",
-    icon: <Football className="h-4 w-4" />,
+    icon: null,
     page: <FootballBooking />,
   },
 ];
