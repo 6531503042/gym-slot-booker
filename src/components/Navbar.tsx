@@ -9,7 +9,7 @@ const AppNavbar: React.FC = () => {
   return (
     <Navbar isBordered>
       <NavbarBrand>
-        <Link to="/" className="font-bold text-inherit">Gym & Sports Booking</Link>
+        <Link to="/" className="font-bold text-inherit">Sports Facility Booking</Link>
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         {navItems.map((item) => (
