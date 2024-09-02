@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Dumbbell, Activity, Waves } from "lucide-react";
-import SportsFootballIcon from '@mui/icons-material/SportsFootball';
+import { Dumbbell, Activity, Waves, Futbol } from "lucide-react";
 
 const Index = () => {
   return (
@@ -28,7 +27,7 @@ const Index = () => {
           </Link>
           <Link to="/football-booking">
             <Button size="lg" variant="outline" className="w-full">
-              <SportsFootballIcon className="mr-2 h-5 w-5" /> Book Football
+              <Futbol className="mr-2 h-5 w-5" /> Book Football
             </Button>
           </Link>
         </div>
