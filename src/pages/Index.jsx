@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Dumbbell, Activity, Waves, Soccer } from "lucide-react";
+import { Dumbbell, Activity, Waves, Futbol } from "lucide-react";
 
-const Index = () => {
+const Index: React.FC = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="text-center">
@@ -27,7 +27,7 @@ const Index = () => {
           </Link>
           <Link to="/football-booking">
             <Button size="lg" variant="outline" className="w-full">
-              <Soccer className="mr-2 h-5 w-5" /> Book Football
+              <Futbol className="mr-2 h-5 w-5" /> Book Football
             </Button>
           </Link>
         </div>
