@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import BookingForm from '@/components/BookingForm';
-import FootballTimeSlotGrid from './components/FootballTimeSlotGrid';
+import { Button } from "@/components/ui/button";
 import { footballTimeSlots } from './data/footballData';
 
 const FootballBooking: React.FC = () => {
@@ -13,7 +13,18 @@ const FootballBooking: React.FC = () => {
           <CardDescription className="text-center">Select an available time slot to book the football field</CardDescription>
         </CardHeader>
         <CardContent>
-          <FootballTimeSlotGrid timeSlots={footballTimeSlots} />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+            {footballTimeSlots.map((slot, index) => (
+              <Button
+                key={index}
+                variant={slot.status === "Available" ? "outline" : "secondary"}
+                className={`w-full ${slot.status === "Available" ? "hover:bg-green-100" : "opacity-50 cursor-not-allowed"}`}
+                disabled={slot.status !== "Available"}
+              >
+                {slot.time} - {slot.status}
+              </Button>
+            ))}
+          </div>
           <BookingForm facilityType="Football Field" />
         </CardContent>
       </Card>
