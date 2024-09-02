@@ -1,8 +1,10 @@
 import React from 'react';
-import { HomeIcon, DumbbellIcon, Activity } from "lucide-react";
+import { HomeIcon, DumbbellIcon, Activity, Waves, Futbol } from "lucide-react";
 import Index from "./pages/Index";
 import GymBooking from "./pages/GymBooking";
-import BadmintonBooking from "./pages/BadmintonBooking";
+import BadmintonBooking from "./pages/BadmintonBooking/BadmintonBooking";
+import SwimmingBooking from "./pages/SwimmingBooking/SwimmingBooking";
+import FootballBooking from "./pages/FootballBooking/FootballBooking";
 
 interface NavItem {
   title: string;
@@ -29,5 +31,17 @@ export const navItems: NavItem[] = [
     to: "/badminton-booking",
     icon: <Activity className="h-4 w-4" />,
     page: <BadmintonBooking />,
+  },
+  {
+    title: "Swimming Booking",
+    to: "/swimming-booking",
+    icon: <Waves className="h-4 w-4" />,
+    page: <SwimmingBooking />,
+  },
+  {
+    title: "Football Booking",
+    to: "/football-booking",
+    icon: <Futbol className="h-4 w-4" />,
+    page: <FootballBooking />,
   },
 ];
