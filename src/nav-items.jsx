@@ -1,5 +1,6 @@
-import { HomeIcon, DumbbellIcon, Activity, Waves, Soccer } from "lucide-react";
-import Index from "./pages/Index.jsx";
+import React from 'react';
+import { HomeIcon, DumbbellIcon, Activity, Waves, Football } from "lucide-react";
+import Index from "./pages/Index";
 import GymBooking from "./pages/GymBooking";
 import BadmintonBooking from "./pages/BadmintonBooking/BadmintonBooking";
 import SwimmingBooking from "./pages/SwimmingBooking/SwimmingBooking";
@@ -36,7 +37,7 @@ export const navItems = [
   {
     title: "Football Booking",
     to: "/football-booking",
-    icon: <Soccer className="h-4 w-4" />,
+    icon: <Football className="h-4 w-4" />,
     page: <FootballBooking />,
   },
 ];
